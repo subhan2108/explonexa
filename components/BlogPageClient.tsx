@@ -1,10 +1,10 @@
 "use client";
 
-import { BlogData } from "@/lib/data-service";
+import { BlogEntry } from "@/lib/data-service";
 import BlogList from "@/components/BlogList";
 
 interface BlogPageClientProps {
-  blogs: BlogData[];
+  blogs: BlogEntry[];
 }
 
 export default function BlogPageClient({ blogs }: BlogPageClientProps) {

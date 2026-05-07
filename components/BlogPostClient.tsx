@@ -1,11 +1,11 @@
 "use client";
 
-import { BlogData } from "@/lib/data-service";
+import { BlogEntry } from "@/lib/data-service";
 import Link from "next/link";
 
 interface BlogPostClientProps {
-  blog: BlogData;
-  relatedBlogs: BlogData[];
+  blog: BlogEntry;
+  relatedBlogs: BlogEntry[];
 }
 
 export default function BlogPostClient({ blog, relatedBlogs }: BlogPostClientProps) {
